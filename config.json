@@ -1,0 +1,10 @@
+{
+    "csjs_in_dir":"d_csvjsonin",
+    "csjs_out_dir":"d_csvjsonout",
+    "join_in_dir": "d_joinin",
+    "join_out_dir":"d_joinout",
+    "output_filename": "joined_file.csv",
+    "csv_delimiter": ";",
+    "mpdf_in_dir":"d_pdfin",
+    "mpdf_out_dir":"d_pdfout"
+}
