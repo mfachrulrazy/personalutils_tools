@@ -48,21 +48,22 @@ These tools are highly configurable and designed for simplicity, making them per
 
 ## Configuration
 The tool uses a config.json file for specifying directories:
-    - d_csvjsonin: Directory containing input files for CSV to JSON.
-    - d_csvjsonout: Directory where output files of CSV of JSON will be saved.
-    - d_joinin: Directory containing input files for Joining CSV or Excel script.
-    - d_joinout: Directory where output files of Joining CSV or Excel script will be saved.
-    - d_pdfin: Directory containing input files for Merge PDF Files.
-    - d_pdfout: Directory where output files of Merge PDF Files will be saved.
-    - csv_delimiter: default is ";"
-    - output_filename: only for Join file script
+
+- d_csvjsonin: Directory containing input files for CSV to JSON.
+- d_csvjsonout: Directory where output files of CSV of JSON will be saved.
+- d_joinin: Directory containing input files for Joining CSV or Excel script.
+- d_joinout: Directory where output files of Joining CSV or Excel script will be saved.
+- d_pdfin: Directory containing input files for Merge PDF Files.
+- d_pdfout: Directory where output files of Merge PDF Files will be saved.
+- csv_delimiter: default is ";"
+- output_filename: only for Join file script
 
 Update the paths as needed before running the scripts.
 
 ## Usage
-Use the tool from command line
-    ```bash
-    python <script.py>
+Use the tool from command line:
+     ```bash
+    python [script].py
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
