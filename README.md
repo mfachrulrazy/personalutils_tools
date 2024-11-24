@@ -62,7 +62,7 @@ Update the paths as needed before running the scripts.
 
 ## Usage
 Use the tool from command line:
-     ```bash
+
     python [script].py
 
 ## License
