@@ -109,8 +109,21 @@ def merge_files(data_frames, output_directory, output_filename):
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)
 
-    output_path = os.path.join(output_directory, output_filename)
-    merged_data.to_csv(output_path, index=False)
+    # Prompt user to choose the output file format
+    while True:
+        file_format = input("Choose output file format (csv/excel): ").strip().lower()
+        if file_format in ["csv", "excel"]:
+            break
+        else:
+            print("Invalid choice. Please enter 'csv' or 'excel'.")
+
+    if file_format == "csv":
+        output_path = os.path.join(output_directory, output_filename)
+        merged_data.to_csv(output_path, index=False)
+    else:  # Excel format
+        output_path = os.path.join(output_directory, output_filename.replace('.csv', '.xlsx'))
+        merged_data.to_excel(output_path, index=False, engine="openpyxl")
+
     print(f"Consolidated file saved to: {output_path}")
 
 
